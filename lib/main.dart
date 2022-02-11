@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:one_minute_bloc_tuto/app_permissions/app_permissions.dart';
+import 'package:one_minute_bloc_tuto/loading/loading.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,11 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BlocProvider(
-          create: (context) =>
-              AppPermissionsCubit(permissionHelper: const PermissionHelper())
-                ..fetchPermissions(),
-          child: const PermissionsPage()),
+      home: const LoadingPage(),
     );
   }
 }

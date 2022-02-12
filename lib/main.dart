@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:one_minute_bloc_tuto/loading/loading.dart';
+import 'package:one_minute_bloc_tuto/nav/nav.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LoadingPage(),
+      home: const BottomNavBarPage(),
     );
   }
 }
